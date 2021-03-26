@@ -6,7 +6,7 @@ export class DbLoadSurveyById implements LoadSurveyById {
   constructor (private readonly loadSurveyRepository: LoadSurveyByIdRepository) {}
 
   async loadById (id: string): Promise<SurveyModel> {
-    await this.loadSurveyRepository.loadById(id)
-    return null
+    const survey = await this.loadSurveyRepository.loadById(id)
+    return survey
   }
 }
