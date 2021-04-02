@@ -1,154 +1,146 @@
-# **Clean Node API**
+<h1 align="center">
+  <strong>Clean Node API</strong>
+</h1>
 
-Essa API faz parte do treinamento do professor Rodrigo Manguinho (Mango) na Udemy.
+<p align="center">
+ <a href="#about">Sobre</a> |
+ <a href="#technologies">Tecnologias</a> |
+ <a href="#features">Features</a> | 
+ <a href="#requirements">Requisitos</a> | 
+ <a href="#executable">Execução</a> |
+ <a href="#tests">Testes</a> |
+ <a href="#license">Licença</a> |
+ <a href="#author">Autor</a>
+</p>
 
-> ### [Link para o treinamento](https://www.udemy.com/course/tdd-com-mango/)
+![Badge](https://img.shields.io/github/license/viniciuscanuto/clean-node-api)
 
-O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem definida e desacoplada, utilizando TDD (programação orientada a testes) como metodologia de trabalho, Clean Architecture para fazer a distribuição de responsabilidades em camadas, sempre seguindo os princípios do SOLID e, sempre que possível, aplicando Design Patterns para resolver alguns problemas comuns.
+<!--
+  Badge tag
+  Badge coverage
+  Badge travis
+  Badge eslint = standard
 
-> ### APIs construídas no treinamento
-1. [Cadastro](./requirements/signup.md)
-1. [Login](./requirements/login.md)
-1. [Criar enquete](./requirements/add-survey.md)
-1. [Listar enquetes](./requirements/load-surveys.md)
-1. [Responder enquete](./requirements/save-survey-result.md)
-1. [Resultado da enquete](./requirements/load-survey-result.md)
+  badge heroku?
 
-> ## Princípios
-* Single Responsibility Principle (SRP)
-* Open Closed Principle (OCP)
-* Liskov Substitution Principle (LSP)
-* Interface Segregation Principle (ISP)
-* Dependency Inversion Principle (DIP)
-* Separation of Concerns (SOC)
-* Don't Repeat Yourself (DRY)
-* You Aren't Gonna Need It (YAGNI)
-* Keep It Simple, Silly (KISS)
-* Composition Over Inheritance
-* Small Commits
+-->
 
-> ## Design Patterns
-* Factory
-* Adapter
-* Composite
-* Decorator
-* Proxy
-* Dependency Injection
-* Abstract Server
-* Composition Root
-* Builder
-* Singleton
+<h2 id="about">Sobre</h2>
 
-> ## Metodologias e Designs
-* TDD
-* Clean Architecture
-* DDD
-* Conventional Commits
-* GitFlow
-* Modular Design
-* Dependency Diagrams
-* Use Cases
-* Continuous Integration
-* Continuous Delivery
-* Continuous Deployment
+<h2 id="technologies">Tecnologias</h2>
 
-> ## Bibliotecas e Ferramentas
-* NPM
-* Typescript
-* Git
-* Docker
-* Jest
-* MongoDb
-* Travis CI
-* Swagger
-* Bcrypt
-* JsonWebToken
-* Faker
-* Coveralls
-* Validator
-* Express
-* Apollo Server Express
-* Graphql
-* Graphql ISO Date
-* Supertest
-* Husky
-* Lint Staged
-* Eslint
-* Standard Javascript Style
-* Sucrase
-* Nodemon
-* Rimraf
-* In-Memory MongoDb Server
-* MockDate
-* Module-Alias
-* Copyfiles
-* Npm Check
-* Bson ObjectId
-* Apollo Server Integration Testing
+<!-- 
+node
+typescript
+jsonwebtoken
+git
+jest
+eslint
+docker
+heroku
 
-> ## Features do Node
-* Documentação de API com Swagger
-* API Rest com Express
-* GraphQL com Apollo Server
-* Log de Erro
-* Segurança (Hashing, Encryption e Encoding)
-* CORS
-* Middlewares
-* Nível de Acesso nas Rotas (Admin, User e Anônimo)
-* Deploy no Heroku
-* Servir Arquivos Estáticos
+vscode
+-->
 
-> ## Features do GraphQL
-* Types
-* Queries
-* Mutations
-* Resolvers
-* Directives
-* Scalars
-* Plugins
+<h2 id="features">Features</h2>
 
-> ## Features do Git
-* Alias
-* Log Personalizado
-* Branch
-* Reset
-* Amend
-* Tag
-* Stash
-* Rebase
-* Merge
+1. ☑ [Cadastro](./requirements/signup.md)
+1. ☑ [Login](./requirements/login.md)
+1. ☑ [Criar enquete](./requirements/add-survey.md)
+1. ☑ [Listar enquetes](./requirements/load-surveys.md)
+1. ☑ [Responder enquete](./requirements/save-survey-result.md)
+1. ☑ [Resultado da enquete](./requirements/load-survey-result.md)
 
-> ## Features do Typescript
-* POO Avançado
-* Interface
-* TypeAlias
-* Namespace
-* Utility Types
-* Modularização de Paths
-* Configurações
-* Build
-* Deploy
-* Uso de Breakpoints
+<h2 id="requirements">Requisitos</h2>
 
-> ## Features de Testes
-* Testes Unitários
-* Testes de Integração (API Rest & GraphQL)
-* Cobertura de Testes
-* Test Doubles
-* Mocks
-* Stubs
-* Spies
-* Fakes
+* Com Docker
+  * 📘 Instalar o Docker 🏷 22.10.5
 
-> ## Features do MongoDb
-* Connect e Reconnect
-* Collections
-* InsertOne e InserMany
-* Find, FindOne e FindOneAndUpdate
-* DeleteMany
-* UpdateOne
-* Aggregation (Match, Group, Unwind, Lookup, AddFields, Project, Sort)
-* ObjectId
-* Upsert e ReturnOriginal
-* Push, Divide, Multiply, ArrayElemAt, Cond, Sum
-* Filter, Map, Reduce, MergeObjects, ConcatArrays
+* Sem Docker 
+  * 📗 Instalar o Nodejs 🏷 12.16.1
+  * 📗 Instalar o MongoDB 🏷 4.4.3
+
+<h2 id="executable">Execução</h2>
+
+* Com Docker
+  * ▶ Executar o Container
+
+    ```
+    $ npm run up
+    ```
+  * ⏹ Desligar o Container
+
+    ```
+      $ npm run down
+    ```
+* Sem Docker
+  * 🔽 Instalar as dependências
+
+    ```
+    $ npm install
+    ```
+  * 🔁 Compilar 
+
+    ```
+    $ npm run build
+    ```
+  * ▶ Executar o servidor
+
+    ```
+    $ npm start
+    ```
+<h2 id="tests">Testes</h2>
+
+* 🔎 Executar todos os testes
+
+  ```
+  $ npm teste
+  ```
+
+* 🔎 Executar um teste específico
+
+  ```
+  $ npm run [teste-comando]
+  ```
+
+<table>
+  <tr>
+    <th>[teste-comando]</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td>test:verbose</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>test:unit</td>
+    <td>Executa os testes unitários</td>
+  </tr>
+  <tr>
+    <td>test:integration</td>
+    <td>Executa os testes de integrações</td>
+  </tr>
+  <tr>
+    <td>test:staged</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>test:ci</td>
+    <td>Executa todos os testes com a cobertura do coverage</td>
+  </tr>
+</table>
+<br/>
+<h2 id="license">Licença</h2>
+<br/>
+<a href="./license">
+<p align="center">📝 License MIT © 2021  Vinícius Canuto</p>
+</a>
+<br/>
+<h2 id="author">Autor</h2>
+<br/>
+
+<h3>🕵🏽‍♂️ Vinícius Canuto</h3>
+<h4>💼 Desenvolvedor Full Stack</h4>
+
+[![Linkedin Badge](https://img.shields.io/badge/-Vinícius-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/vin%C3%ADcius-canuto-749602170/)](https://www.linkedin.com/in/vin%C3%ADcius-canuto-749602170/) 
+[![Gmail Badge](https://img.shields.io/badge/-vncscanuto@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:vncscanuto@gmail.com)](mailto:vncscanuto@gmail.com)
