@@ -4,43 +4,19 @@
 
 <p align="center">
  <a href="#about">Sobre</a> |
- <a href="#technologies">Tecnologias</a> |
  <a href="#features">Features</a> | 
  <a href="#requirements">Requisitos</a> | 
  <a href="#executable">Execução</a> |
  <a href="#tests">Testes</a> |
+ <a href="#technologies">Tecnologias</a> |
  <a href="#license">Licença</a> |
  <a href="#author">Autor</a>
 </p>
 
-![Badge](https://img.shields.io/github/license/viniciuscanuto/clean-node-api)
-
-<!--
-  Badge tag
-  Badge coverage
-  Badge travis
-  Badge eslint = standard
-
-  badge heroku?
-
--->
-
 <h2 id="about">Sobre</h2>
+Clean Node Api é um projeto desenvolvido em Node.js com TypeScript no intuito de realizar enquetes entre programadores. O treinamento é idealizado pelo instrutor Rodrigo Manguinho. Além disso, o curso aborda diversos aspectos teóricos e práticos para uma arquitetura desacoplada, além de um baixo custo de manutenção. Alguns destes são DDD (Domain Drive Design), TDD, Clean Architecture, SOLID principles, Design Patterns, GitFlow, entre outros.  
 
-<h2 id="technologies">Tecnologias</h2>
-
-<!-- 
-node
-typescript
-jsonwebtoken
-git
-jest
-eslint
-docker
-heroku
-
-vscode
--->
+  * 📚 [Link do Treinamento](https://www.udemy.com/course/tdd-com-mango/)
 
 <h2 id="features">Features</h2>
 
@@ -130,6 +106,40 @@ vscode
   </tr>
 </table>
 <br/>
+<h2 id="technologies">Tecnologias</h2>
+<br />
+<a href="https://nodejs.org/en/">
+<img src="./requirements/assets/logo-nodejs.svg" width="60" alt="Node.js" />
+</a>
+<a href="https://www.typescriptlang.org/">
+<img src="./requirements/assets/logo-typescript.svg" width="60" alt="" />
+</a>
+<a href="https://www.mongodb.com/">
+<img src="./requirements/assets/logo-mongodb.svg" width="60" alt="" />
+</a>
+<a href="https://www.docker.com/">
+<img src="./requirements/assets/logo-docker.svg" width="60" alt="" />
+</a>
+<a href="https://eslint.org/">
+<img src="./requirements/assets/logo-eslint.svg" width="60" alt="" />
+</a>
+<a href="https://jestjs.io/">
+<img src="./requirements/assets/logo-jest.svg" width="60" alt="" />
+</a>
+<a href="https://git-scm.com/">
+<img src="./requirements/assets/logo-git.svg" width="60" alt="" />
+</a>
+<a href="https://www.heroku.com/">
+<img src="./requirements/assets/logo-heroku.svg" width="60" alt="" />
+</a>
+<a href="https://jwt.io/">
+<img src="./requirements/assets/logo-jsonwebtoken.svg" width="60" alt="" />
+</a>
+<a href="https://code.visualstudio.com/">
+<img src="./requirements/assets/logo-vscode.svg" width="60" alt="" />
+</a>
+<br />
+<br />
 <h2 id="license">Licença</h2>
 <br/>
 <a href="./license">
@@ -139,6 +149,7 @@ vscode
 <h2 id="author">Autor</h2>
 <br/>
 
+<img style="border-radius: 50%" src="https://github.com/viniciuscanuto.png" height="80" alt="Vinícius Canuto">
 <h3>🕵🏽‍♂️ Vinícius Canuto</h3>
 <h4>💼 Desenvolvedor Full Stack</h4>
 
