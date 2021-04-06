@@ -13,6 +13,8 @@
  <a href="#author">Autor</a>
 </p>
 
+[![Build Status](https://travis-ci.org/viniciuscanuto/clean-node-api.svg?branch=main)](https://travis-ci.org/viniciuscanuto/clean-node-api)
+
 <h2 id="about">Sobre</h2>
 Clean Node Api é um projeto desenvolvido em Node.js com TypeScript no intuito de realizar enquetes entre programadores. O treinamento é idealizado pelo instrutor Rodrigo Manguinho. Além disso, o curso aborda diversos aspectos teóricos e práticos para uma arquitetura desacoplada, além de um baixo custo de manutenção. Alguns destes são DDD (Domain Drive Design), TDD, Clean Architecture, SOLID principles, Design Patterns, GitFlow, entre outros.  
 
