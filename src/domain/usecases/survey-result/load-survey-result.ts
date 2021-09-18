@@ -1,4 +1,4 @@
-import { SurveyResultModel } from '../../models/survey-result'
+import { SurveyResultModel } from '../../models'
 
 export interface LoadSurveyResult {
   load (surveyId: string, accountId: string): Promise<SurveyResultModel>
