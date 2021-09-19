@@ -3,7 +3,7 @@ import { HttpRequest } from '@/presentation/protocols'
 import { forbidden, ok, serveError } from '@/presentation/helpers'
 import { AccessDeniedError } from '@/presentation/errors'
 import { LoadAccountByTokenSpy } from '@/tests/presentation/mocks'
-import { throwError } from '@/tests/domain/mocks'
+import { throwError } from '@/../tests/domain/mocks'
 
 const mockRequest = (): HttpRequest => ({
   headers: {
