@@ -2,19 +2,19 @@ import { gql } from 'apollo-server-express'
 
 export default gql`
     extend type Query {
-        surveys: [Survey!]!
+        surveys: [Survey!]! @auth
     }
 
     type Survey {
         id: ID!
-    question: String!
-    answers: [SurveyAnswerModel!]!
-    date: DateTime!
-    didAnswer: Boolean
+        question: String!
+        answers: [SurveyAnswerModel!]!
+        date: DateTime!
+        didAnswer: Boolean
     }
 
     type SurveyAnswerModel {
-    image: String
-    answer: String!
+        image: String
+        answer: String!
   }
 `
