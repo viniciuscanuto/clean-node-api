@@ -23,6 +23,7 @@ describe('Login GraphQL', () => {
     accountCollection = await MongoHelper.getCollection('accounts')
     await accountCollection.deleteMany({})
   })
+
   describe('Login Query', () => {
     const loginQuery = gql`
         query login ($email: String!, $password: String!) {
@@ -61,6 +62,31 @@ describe('Login GraphQL', () => {
       })
       expect(res.data).toBeFalsy()
       expect(res.errors[0].message).toBe('Unauthorized')
+    })
+  })
+
+  describe('SignUp Mutation', () => {
+    const signUpMutation = gql`
+        mutation signUp ($name: String!, $email: String!, $password: String!, $passwordConfirmation: String!) {
+            signup (name: $name, email: $email, password: $password, passwordConfirmation: $passwordConfirmation) {
+                accessToken
+                name
+            }
+        }
+    `
+
+    test('Should return an Account on valid data', async () => {
+      const { mutate } = createTestClient({ apolloServer })
+      const res: any = await mutate(signUpMutation, {
+        variables: {
+          name: 'Vinicius',
+          email: 'vncscanuto@gmail.com',
+          password: '123',
+          passwordConfirmation: '123'
+        }
+      })
+      expect(res.data.signup.accessToken).toBeTruthy()
+      expect(res.data.signup.name).toBe('Vinicius')
     })
   })
 })
