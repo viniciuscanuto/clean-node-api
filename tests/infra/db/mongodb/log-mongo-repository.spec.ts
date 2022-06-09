@@ -1,4 +1,5 @@
 import { LogMongoRepository, MongoHelper } from '@/infra/db'
+
 import { Collection } from 'mongodb'
 import faker from 'faker'
 

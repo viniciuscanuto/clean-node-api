@@ -10,7 +10,9 @@
         "@typescript-eslint/method-signature-style": "off",
         "@typescript-eslint/no-misused-promises": "off",
         "@typescript-eslint/consistent-type-definitions": "off",
-        "@typescript-eslint/restrict-template-expressions": "off"
+        "@typescript-eslint/restrict-template-expressions": "off",
+        "@typescript-eslint/no-namespace": "off",
+        "import/export": "off"
     }
     
 }

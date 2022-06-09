@@ -1,4 +1,5 @@
 import { Hasher, HashComparer, Encrypter, Decrypter } from '@/data/protocols'
+
 import faker from 'faker'
 
 export class HasherSpy implements Hasher {
